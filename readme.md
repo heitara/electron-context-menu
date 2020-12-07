@@ -112,6 +112,13 @@ Default: `true`
 
 Show the `Search with Google` menu item when right-clicking text on macOS.
 
+#### showUndo
+
+Type: `boolean`\
+Default: `false`
+
+Show the `Undo` menu item when right-clicking on a link.
+
 #### showCopyImage
 
 Type: `boolean`\
@@ -218,6 +225,7 @@ To get spellchecking, “Correct Automatically”, and “Learn Spelling” in t
 The following options are ignored when `menu` is used:
 
 - `showLookUpSelection`
+- `showUndo`
 - `showCopyImage`
 - `showCopyImageAddress`
 - `showSaveImageAs`
@@ -233,6 +241,7 @@ Default actions:
 - `separator`
 - `lookUpSelection`
 - `searchWithGoogle`
+- `undo`
 - `cut`
 - `copy`
 - `paste`

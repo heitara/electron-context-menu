@@ -70,6 +70,15 @@ const create = (win, options) => {
 					electron.shell.openExternal(url.toString());
 				}
 			}),
+			undo: decorateMenuItem({
+				id: 'undo',
+				label: '&Undo',
+				enabled: can('Undo'),
+				visible: props.isEditable,
+				click() {
+					webContents(win).undo();
+				}
+			}),
 			cut: decorateMenuItem({
 				id: 'cut',
 				label: 'Cu&t',
@@ -236,6 +245,8 @@ const create = (win, options) => {
 			options.showLookUpSelection !== false && defaultActions.lookUpSelection(),
 			defaultActions.separator(),
 			options.showSearchWithGoogle !== false && defaultActions.searchWithGoogle(),
+			defaultActions.separator(),
+			options.showUndo && defaultActions.undo(),
 			defaultActions.separator(),
 			defaultActions.cut(),
 			defaultActions.copy(),

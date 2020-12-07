@@ -5,6 +5,7 @@ const contextMenu = require('..');
 
 contextMenu({
 	labels: {
+		undo: 'Configured Undo',
 		cut: 'Configured Cut',
 		copy: 'Configured Copy',
 		paste: 'Configured Paste',
@@ -39,7 +40,8 @@ contextMenu({
 	showCopyImageAddress: true,
 	showSaveImageAs: true,
 	showInspectElement: false,
-	showSaveLinkAs: true
+	showSaveLinkAs: true,
+	showUndo: true
 });
 
 (async () => {
