@@ -126,6 +126,13 @@ Default: `false`
 
 Show the `Delete` menu item when right-clicking on an editable.
 
+#### showSelectAll
+
+Type: `boolean`\
+Default: `false`
+
+Show the `Select All` menu item when right-clicking on an editable.
+
 #### showCopyImage
 
 Type: `boolean`\
@@ -234,6 +241,7 @@ The following options are ignored when `menu` is used:
 - `showLookUpSelection`
 - `showUndo`
 - `showDelete`
+- `showSelectAll`
 - `showCopyImage`
 - `showCopyImageAddress`
 - `showSaveImageAs`
@@ -254,6 +262,7 @@ Default actions:
 - `copy`
 - `paste`
 - `delete`
+- `selectAll`
 - `saveImage`
 - `saveImageAs`
 - `copyImage`

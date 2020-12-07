@@ -137,6 +137,15 @@ const create = (win, options) => {
 					webContents(win).delete();
 				}
 			}),
+			selectAll: decorateMenuItem({
+				id: 'selectAll',
+				label: '&Select All',
+				enabled: editFlags.canSelectAll,
+				visible: props.isEditable,
+				click() {
+					webContents(win).selectAll();
+				}
+			}),
 			saveImage: decorateMenuItem({
 				id: 'saveImage',
 				label: 'Save I&mage',
@@ -261,6 +270,8 @@ const create = (win, options) => {
 			defaultActions.copy(),
 			defaultActions.paste(),
 			options.showDelete && defaultActions.delete(),
+			defaultActions.separator(),
+			options.showSelectAll && defaultActions.selectAll(),
 			defaultActions.separator(),
 			options.showSaveImage && defaultActions.saveImage(),
 			options.showSaveImageAs && defaultActions.saveImageAs(),

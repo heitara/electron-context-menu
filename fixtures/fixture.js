@@ -10,6 +10,7 @@ contextMenu({
 		copy: 'Configured Copy',
 		paste: 'Configured Paste',
 		delete: 'Configured Delete',
+		selectAll: 'Configured Select All',
 		save: 'Configured Save Image',
 		saveImageAs: 'Configured Save Image As…',
 		copyLink: 'Configured Copy Link',
@@ -43,7 +44,8 @@ contextMenu({
 	showInspectElement: false,
 	showSaveLinkAs: true,
 	showUndo: true,
-	showDelete: true
+	showDelete: true,
+	showSelectAll: true
 });
 
 (async () => {
