@@ -9,6 +9,7 @@ contextMenu({
 		cut: 'Configured Cut',
 		copy: 'Configured Copy',
 		paste: 'Configured Paste',
+		delete: 'Configured Delete',
 		save: 'Configured Save Image',
 		saveImageAs: 'Configured Save Image As…',
 		copyLink: 'Configured Copy Link',
@@ -41,7 +42,8 @@ contextMenu({
 	showSaveImageAs: true,
 	showInspectElement: false,
 	showSaveLinkAs: true,
-	showUndo: true
+	showUndo: true,
+	showDelete: true
 });
 
 (async () => {

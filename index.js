@@ -128,6 +128,15 @@ const create = (win, options) => {
 					}
 				}
 			}),
+			delete: decorateMenuItem({
+				id: 'delete',
+				label: '&Delete',
+				enabled: can('Delete'),
+				visible: props.isEditable,
+				click() {
+					webContents(win).delete();
+				}
+			}),
 			saveImage: decorateMenuItem({
 				id: 'saveImage',
 				label: 'Save I&mage',
@@ -251,6 +260,7 @@ const create = (win, options) => {
 			defaultActions.cut(),
 			defaultActions.copy(),
 			defaultActions.paste(),
+			options.showDelete && defaultActions.delete(),
 			defaultActions.separator(),
 			options.showSaveImage && defaultActions.saveImage(),
 			options.showSaveImageAs && defaultActions.saveImageAs(),

@@ -117,7 +117,14 @@ Show the `Search with Google` menu item when right-clicking text on macOS.
 Type: `boolean`\
 Default: `false`
 
-Show the `Undo` menu item when right-clicking on a link.
+Show the `Undo` menu item when right-clicking on an editable.
+
+#### showDelete
+
+Type: `boolean`\
+Default: `false`
+
+Show the `Delete` menu item when right-clicking on an editable.
 
 #### showCopyImage
 
@@ -226,6 +233,7 @@ The following options are ignored when `menu` is used:
 
 - `showLookUpSelection`
 - `showUndo`
+- `showDelete`
 - `showCopyImage`
 - `showCopyImageAddress`
 - `showSaveImageAs`
@@ -245,6 +253,7 @@ Default actions:
 - `cut`
 - `copy`
 - `paste`
+- `delete`
 - `saveImage`
 - `saveImageAs`
 - `copyImage`
