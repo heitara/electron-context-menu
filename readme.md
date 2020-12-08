@@ -112,6 +112,27 @@ Default: `true`
 
 Show the `Search with Google` menu item when right-clicking text on macOS.
 
+#### showUndo
+
+Type: `boolean`\
+Default: `false`
+
+Show the `Undo` menu item when right-clicking on an editable.
+
+#### showDelete
+
+Type: `boolean`\
+Default: `false`
+
+Show the `Delete` menu item when right-clicking on an editable.
+
+#### showSelectAll
+
+Type: `boolean`\
+Default: `false`
+
+Show the `Select All` menu item when right-clicking on an editable.
+
 #### showCopyImage
 
 Type: `boolean`\
@@ -218,6 +239,9 @@ To get spellchecking, “Correct Automatically”, and “Learn Spelling” in t
 The following options are ignored when `menu` is used:
 
 - `showLookUpSelection`
+- `showUndo`
+- `showDelete`
+- `showSelectAll`
 - `showCopyImage`
 - `showCopyImageAddress`
 - `showSaveImageAs`
@@ -233,9 +257,12 @@ Default actions:
 - `separator`
 - `lookUpSelection`
 - `searchWithGoogle`
+- `undo`
 - `cut`
 - `copy`
 - `paste`
+- `delete`
+- `selectAll`
 - `saveImage`
 - `saveImageAs`
 - `copyImage`
