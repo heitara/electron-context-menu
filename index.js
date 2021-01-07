@@ -2,7 +2,7 @@
 const electron = require('electron');
 const cliTruncate = require('cli-truncate');
 const {download} = require('electron-dl');
-const isDev = require('electron-is-dev');
+const isDev = false;
 
 const webContents = win => win.webContents || (win.getWebContentsId && electron.remote.webContents.fromId(win.getWebContentsId()));
 
